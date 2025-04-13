@@ -1,0 +1,10 @@
+version: '3'
+services:
+  simulation:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - DISPLAY=:99
+    ports:
+      - "8000:8000"  # Jeśli zechcesz dodać interfejs webowy w przyszłości
